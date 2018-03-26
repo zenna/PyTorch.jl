@@ -17,7 +17,8 @@ variable(x::Array) = PyTorch.autograd.Variable(PyTorch.torch.Tensor(x))
 
 # struct Tensor
 # end
-Tensor = PyObject
+# Tensor = PyObject
+include("tensor.jl")
 
 export Tensor
 
